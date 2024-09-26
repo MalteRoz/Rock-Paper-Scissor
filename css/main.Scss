@@ -24,15 +24,20 @@ body {
 
     .container {
         @include shadow();
-        width: 25rem;
+        width: 28rem;
         height: 25rem;
         border-radius: 0.5rem;
         padding: 2rem;
-
+        
+        .start-tag {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
         .display {
             @include flex;
             justify-content: space-evenly;
-            height: 70%;
+            height: 50%;
             img {
                 width: 5rem;
                 
@@ -40,10 +45,12 @@ body {
 
             .left {
                 transform: rotate(90deg);
+                margin-right: 1rem;
             }
 
             .right {
                 transform: scaleX(-1) rotate(90deg);
+                margin-left: 1rem;
             }
         }
 

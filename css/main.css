@@ -13,26 +13,33 @@ body {
 }
 body .container {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 25rem;
+  width: 28rem;
   height: 25rem;
   border-radius: 0.5rem;
   padding: 2rem;
+}
+body .container .start-tag {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 body .container .display {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
-  height: 70%;
+  height: 50%;
 }
 body .container .display img {
   width: 5rem;
 }
 body .container .display .left {
   transform: rotate(90deg);
+  margin-right: 1rem;
 }
 body .container .display .right {
   transform: scaleX(-1) rotate(90deg);
+  margin-left: 1rem;
 }
 body .container .alt {
   display: flex;
