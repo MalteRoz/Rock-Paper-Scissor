@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #7d2ae8;
+}
+body .container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+body .container .display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 70%;
+}
+body .container .display img {
+  width: 5rem;
+}
+body .container .display .left {
+  transform: rotate(90deg);
+}
+body .container .display .right {
+  transform: scaleX(-1) rotate(90deg);
+}
+body .container .alt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+body .container .alt div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .container .alt div h2 {
+  font-size: 1rem;
+}
+body .container .alt div img {
+  width: 3rem;
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=main.css.map */
