@@ -52,11 +52,20 @@ body .container .alt div {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  cursor: pointer;
 }
 body .container .alt div h2 {
   font-size: 1rem;
+  opacity: 40%;
+  transition: all 0.5s;
 }
 body .container .alt div img {
   width: 3rem;
   margin-bottom: 1rem;
+  opacity: 40%;
+  transition: all 0.5s;
+}
+body .container .alt div:hover img, body .container .alt div:hover h2 {
+  opacity: 1;
+  transition: all 0.5s;
 }/*# sourceMappingURL=main.css.map */

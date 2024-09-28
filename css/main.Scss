@@ -57,20 +57,33 @@ body {
         .alt {
             @include flex;
             justify-content: space-evenly;
+
+            
             div {
                 @include flex;
                 flex-direction: column;
+                cursor: pointer;
                 h2 {
                     font-size: 1rem;
+                    opacity: 40%;
+                    transition: all 0.5s;
                 }
 
                 img {
                     width: 3rem;
                     margin-bottom: 1rem;
+                    opacity: 40%;
+                    transition: all 0.5s;
+                }
+
+                &:hover {
+
+                    img, h2  {
+                        opacity: 1;
+                        transition: all 0.5s;
+                    }
                 }
             }
         }
     }
-
-
 }
