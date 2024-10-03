@@ -14,29 +14,51 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="display">
-            <img src="images/rock.png" alt="" class="left" />
-            <img src="images/rock.png" alt="" class="right" />
-        </div>
-        <h2 class="start-tag">Lets Play!</h2>
-        <div class="alt">
-            
-            <div class="rock">
-                <img src="images/rock.png" alt="" />
-                <h2>Rock</h2>
+
+    <div class="container tooltip">
+        <span class="tooltiptext">Choose Amount of Rounds</span>
+        <div class="locked-container lockedGame" >
+            <div class="display">
+                <img src="images/rock.png" alt="" class="left" />
+                <img src="images/rock.png" alt="" class="right" />
             </div>
-            <div class="paper">
-                <img src="images/paper.png" alt="" />
-                <h2>Paper</h2>
-            </div>
-            <div class="scissor">
-                <img src="images/scissors.png" alt="" />
-                <h2>Scissor</h2>
+            <h2 class="start-tag">Lets Play!</h2>
+
+            <div class="alt">
+
+                <div class="rock">
+                    <img src="images/rock.png" alt="" />
+                    <h2>Rock</h2>
+                </div>
+                <div class="paper">
+                    <img src="images/paper.png" alt="" />
+                    <h2>Paper</h2>
+                </div>
+                <div class="scissor">
+                    <img src="images/scissors.png" alt="" />
+                    <h2>Scissor</h2>
+                </div>
             </div>
         </div>
     </div>
-     <script src="main.js"></script> 
+    <div class="stats-container">
+        <h2>Settings</h2>
+        <div class="slideContainer">
+            <p>Amount of Rounds</p>
+            <div>
+                <input type="range" min="1" max="10" value="5" class="slider">
+                <div class="value">5</div>
+            </div>
+            <button class="start">Start</button>
+        </div>
+        <div class="stats">
+            <h2>Score</h2>
+            <p class="roundPara">Round: </p>
+            <p class="playerStats">Player: </p>
+            <p class="compStats">Computer: </p>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

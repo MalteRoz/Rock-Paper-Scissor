@@ -11,11 +11,15 @@ body {
   height: 100vh;
   color: #7d2ae8;
 }
+body .lockedGame {
+  opacity: 30%;
+  pointer-events: none;
+}
 body .container {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 28rem;
   height: 25rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   padding: 2rem;
 }
 body .container .start-tag {
@@ -23,49 +27,126 @@ body .container .start-tag {
   font-size: 1.5rem;
   margin-bottom: 3rem;
 }
-body .container .display {
+body .container .locked-container {
+  width: 100%;
+  height: 100%;
+}
+body .container .locked-container .display {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
   height: 50%;
 }
-body .container .display img {
+body .container .locked-container .display img {
   width: 5rem;
 }
-body .container .display .left {
+body .container .locked-container .display .left {
   transform: rotate(90deg);
   margin-right: 1rem;
 }
-body .container .display .right {
+body .container .locked-container .display .right {
   transform: scaleX(-1) rotate(90deg);
   margin-left: 1rem;
 }
-body .container .alt {
+body .container .locked-container .alt {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
 }
-body .container .alt div {
+body .container .locked-container .alt div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
 }
-body .container .alt div h2 {
+body .container .locked-container .alt div h2 {
   font-size: 1rem;
   opacity: 40%;
   transition: all 0.5s;
 }
-body .container .alt div img {
+body .container .locked-container .alt div img {
   width: 3rem;
   margin-bottom: 1rem;
   opacity: 40%;
   transition: all 0.5s;
 }
-body .container .alt div:hover img, body .container .alt div:hover h2 {
+body .container .locked-container .alt div:hover img,
+body .container .locked-container .alt div:hover h2 {
   opacity: 1;
   transition: all 0.5s;
+}
+body .stats-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 2rem;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+body .stats-container .slideContainer p {
+  margin: 1rem 0 0 0;
+}
+body .stats-container .slideContainer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: start;
+}
+body .stats-container .slideContainer div input {
+  margin: 1rem 1rem 1rem 0;
+}
+body .stats-container .slideContainer button {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #7d2ae8;
+  font-weight: 600;
+}
+body .stats-container .stats p {
+  margin: 1rem 1rem 0 0;
+}
+body .tooltip {
+  position: relative;
+  display: inline-block;
+}
+body .tooltip .tooltiptext {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  visibility: hidden;
+  width: auto;
+  background-color: white;
+  color: #7d2ae8;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 45%;
+  margin-left: -60px;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+  /* Tooltip arrow */
+}
+body .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+body .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
